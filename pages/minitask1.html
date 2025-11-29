@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="minitask koda-b5-dom3" />
+    <title>Portfolio | Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-0 p-0 box-border bg-gray-100">
+    <header>
+      <nav
+        class="flex justify-between items-center py-5 px-4 md:px-16 bg-white border-b border-gray-300"
+      >
+        <div class="text-lg font-semibold">VIRGIL I. AMBAR</div>
+        <div class="md:hidden relative">
+          <input type="checkbox" id="menu-toggle" class="hidden peer/menu" />
+          <label
+            for="menu-toggle"
+            class="flex flex-col gap-1.5 cursor-pointer z-50 relative"
+          >
+            <span class="w-6 h-0.5 bg-gray-800 transition-all"></span>
+            <span class="w-6 h-0.5 bg-gray-800 transition-all"></span>
+            <span class="w-6 h-0.5 bg-gray-800 transition-all"></span>
+          </label>
+          <ul
+            class="hidden peer-checked/menu:flex absolute top-12 right-0 bg-white flex-col shadow-md min-w-48 z-40"
+          >
+            <li class="border-b border-gray-300">
+              <a
+                href="#"
+                class="block py-4 px-5 text-sm text-gray-800 hover:text-yellow-500 transition-colors"
+                >Home</a
+              >
+            </li>
+            <li class="border-b border-gray-300">
+              <a
+                href="#"
+                class="block py-4 px-5 text-sm text-gray-800 hover:text-yellow-500 transition-colors"
+                >About</a
+              >
+            </li>
+            <li class="border-b border-gray-300">
+              <a
+                href="#"
+                class="block py-4 px-5 text-sm text-gray-800 hover:text-yellow-500 transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="hidden md:flex gap-10 list-none">
+          <li>
+            <a
+              href="#"
+              class="no-underline text-gray-800 text-sm hover:text-yellow-500 transition-colors"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="no-underline text-gray-800 text-sm hover:text-yellow-500 transition-colors"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="no-underline text-gray-800 text-sm hover:text-yellow-500 transition-colors"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="max-w-7xl mx-auto py-10 md:py-16 px-5 md:px-10">
+        <section
+          class="bg-white py-10 md:py-16 px-8 md:px-20 mb-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center"
+        >
+          <div class="text-center md:text-left">
+            <h1 class="text-4xl md:text-5xl mb-6 md:mb-8 text-gray-800">
+              About me
+            </h1>
+            <p class="text-gray-600 leading-relaxed mb-6 md:mb-8 text-sm">
+              Heil arcu, scelerisque neque at. Tincidunt amet, tempor duis
+              tortor neque velit auctor sit ipsum. Pretium cras amet odio sit
+              eleifend id sed cras sed. Aliquet risus posuere aliquet imperdiet
+              sit.
+            </p>
+            <button
+              class="bg-yellow-500 text-gray-800 py-3 px-8 border-none rounded font-semibold cursor-pointer text-sm hover:bg-yellow-600 transition-colors"
+            >
+              Resume
+            </button>
+          </div>
+
+          <div
+            class="flex justify-center items-center order-first md:order-last"
+          >
+            <div
+              class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full p-4"
+            >
+              <div
+                class="w-full h-full rounded-full overflow-hidden flex items-center justify-center bg-gray-600"
+              >
+                <img
+                  src="/images/virgil.png"
+                  alt="virgil"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white py-10 md:py-16 px-8 md:px-20 font-mono">
+          <h2
+            class="text-center text-4xl md:text-5xl mb-12 md:mb-16 text-gray-800"
+          >
+            Projects
+          </h2>
+          <div
+            class="flex justify-center text-center border-t-4 border-yellow-600 w-16 -mt-8 md:-mt-10 mx-auto mb-12 md:mb-16"
+          ></div>
+          <div class="max-w-2xl mx-auto pb-16 md:pb-20">
+            <form>
+              <div class="mb-8">
+                <label
+                  for="name"
+                  class="block mb-2 text-gray-800 text-sm font-medium"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full py-3 px-3 border border-gray-300 rounded text-sm"
+                />
+              </div>
+              <div class="mb-8">
+                <label
+                  for="email"
+                  class="block mb-2 text-gray-800 text-sm font-medium"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full py-3 px-3 border border-gray-300 rounded text-sm"
+                />
+              </div>
+              <div class="mb-8">
+                <label
+                  for="message"
+                  class="block mb-2 text-gray-800 text-sm font-medium"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  class="w-full py-3 px-3 border border-gray-300 rounded min-h-32 text-sm resize-y"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-yellow-500 text-gray-800 py-3 px-10 border-none rounded font-semibold cursor-pointer text-sm block mx-auto hover:bg-yellow-600 transition-colors"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-white py-10 px-0">
+      <div class="flex justify-center gap-8 mb-4">
+        <a
+          href="https://www.instagram.com/virgilamb"
+          title="Instagram"
+          target="_blank"
+          class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white no-underline hover:bg-yellow-500 hover:text-gray-800 transition-colors"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <rect
+              x="2"
+              y="2"
+              width="20"
+              height="20"
+              rx="5"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            />
+            <circle
+              cx="12"
+              cy="12"
+              r="4"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            />
+            <circle cx="18" cy="6" r="1" fill="currentColor" />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/virgil-ambar-7a303b235/"
+          title="LinkedIn"
+          class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white no-underline hover:bg-yellow-500 hover:text-gray-800 transition-colors"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.5 18H6V10h2.5v8zM7.25 9a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zM18 18h-2.5v-4c0-1.5-2-1.5-2 0v4H11V10h2.5v1.5c1-1.5 4.5-1.5 4.5 2V18z"
+            />
+          </svg>
+        </a>
+        <a
+          href="mailto:imanuelambar11@gmail.com"
+          title="Email"
+          class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white no-underline hover:bg-yellow-500 hover:text-gray-800 transition-colors"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+        </a>
+      </div>
+      <p class="text-center text-gray-400 text-xs pb-5">Virgil I. Ambar 2025</p>
+      <div class="w-full h-40 md:h-52 lg:h-64 relative m-0">
+        <svg
+          class="absolute top-0 left-0 w-full h-full block"
+          viewBox="0 0 1200 250"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,100 Q150,50 300,100 T600,100 Q750,50 900,100 T1200,100 L1200,250 L0,250 Z"
+            fill="grey"
+          />
+        </svg>
+      </div>
+    </footer>
+  </body>
+</html>
