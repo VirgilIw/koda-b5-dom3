@@ -59,7 +59,6 @@ const chart = (sD, uD, rD) => {
           ],
         },
       });
-      return;
     }
 
     if (select.value === "revenue") {
