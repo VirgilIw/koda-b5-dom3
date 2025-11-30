@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="minitask chart" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/chart.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main class="h-full">
+      <label for="chart-select">Data: </label>
+      <select id="chart-select">
+        <option selected disabled>pilih:</option>
+        <option value="sales">sales</option>
+        <option value="user">user</option>
+        <option value="revenue">revenue</option>
+      </select>
+
+      <div class="w-xl flex items-center justify-center mx-auto h-[100%]">
+        <canvas id="grafik-1"></canvas>
+      </div>
+    </main>
+  </body>
+</html>
